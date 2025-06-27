@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap / Veri Silme Talebi - YDS AI</title>
+    <meta name="description" content="YDS AI hesabınızı veya verilerinizi silmeniz için gerekli adımlar. Formu doldurarak talebinizi bize iletebilirsiniz.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Sayfaya özel ufak stiller */
+        .request-form {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .request-form input,
+        .request-form textarea,
+        .request-form select,
+        .request-form button {
+            padding: 12px 15px;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 100%;
+        }
+        .request-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .request-form button {
+            background: #7B2CBF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .request-form button:hover {
+            background: #6522a1;
+        }
+        .info-box {
+            background: #f8f9ff;
+            border: 1px solid #e6e9ff;
+            border-left: 4px solid #7B2CBF;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>YDS AI</h1>
+            <p>Hesap / Veri Silme Talebi</p>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="privacy-policy.html">Gizlilik Politikası</a></li>
+                <li><a href="terms-of-use.html">Kullanım Koşulları</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1>Hesap veya Veri Silme Talebinde Bulunun</h1>
+
+            <p>YDS AI hesabınızı kapatmak veya uygulama içinde tutulan kişisel verilerinizin silinmesini talep etmek için aşağıdaki formu doldurabilirsiniz. Talebiniz, kimlik doğrulaması yapıldıktan sonra <strong>en geç 30 gün</strong> içinde işleme alınacaktır.</p>
+
+            <div class="info-box">
+                <h4>Silinecek / Saklanacak Veriler</h4>
+                <ul>
+                    <li><strong>Silinecek:</strong> Google e-posta adresiniz, Firebase UID'niz, sınav geçmişiniz, abonelik geçmişiniz ve ilgili tüm kullanım verileri</li>
+                    <li><strong>Saklanacak:</strong> Mevzuat gereği saklanması zorunlu faturalandırma kayıtları (maks. 10 yıl)</li>
+                </ul>
+            </div>
+
+            <form class="request-form" action="https://formsubmit.co/aeroglu2016@gmail.com" method="POST">
+                <!-- FormSubmit ayarları -->
+                <input type="hidden" name="_subject" value="YDS AI - Silme Talebi">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label>
+                    E-posta adresiniz (Google hesabınızla aynı olmalıdır)
+                    <input type="email" name="email" required placeholder="ornek@adres.com" />
+                </label>
+
+                <label>
+                    Talep Türü
+                    <select name="request_type" required>
+                        <option value="account_deletion">Hesap ve Tüm Verilerin Silinmesi</option>
+                        <option value="data_deletion">Sadece Verilerimin Silinmesi</option>
+                    </select>
+                </label>
+
+                <label>
+                    Ek Bilgi (isteğe bağlı)
+                    <textarea name="message" placeholder="Talebiniz hakkında eklemek istediğiniz notlar…"></textarea>
+                </label>
+
+                <button type="submit">Talebi Gönder</button>
+            </form>
+
+            <h2>Süreç Nasıl İşler?</h2>
+            <ol>
+                <li>Formu doldurup gönderin.</li>
+                <li>Tarafınıza kimlik doğrulaması için e-posta gönderilir.</li>
+                <li>Kimlik doğrulaması tamamlandıktan sonra hesabınız/verileriniz <strong>30 gün</strong> içinde kalıcı olarak silinir.</li>
+                <li>İşlem tamamlandığında size onay e-postası gönderilir.</li>
+            </ol>
+
+            <div class="contact-info">
+                <h3>Destek</h3>
+                <p>Herhangi bir sorunuz varsa bize ulaşın:</p>
+                <p><a href="mailto:aeroglu2016@gmail.com">aeroglu2016@gmail.com</a></p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 YDS AI. Tüm hakları saklıdır. | 
+            <a href="privacy-policy.html">Gizlilik Politikası</a> | 
+            <a href="terms-of-use.html">Kullanım Koşulları</a></p>
+        </footer>
+    </div>
+</body>
+</html> 
